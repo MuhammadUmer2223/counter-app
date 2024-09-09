@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .center{
+            width: 300px;
+            display: flex;
+            height: 200px;
+            flex-direction: column;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: aqua;
+            align-items: center;
+        }
+        .bg-black{
+            background-color: black;
+            color: white;
+        }
+        .large{
+            width: 80px;
+            height: 30px;
+            font-size: 1.25rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <div><h1 id="heading">0</h1></div>
+        <div>  
+        <button onclick="increament()" class="bg-black large">+</button>
+        <button onclick="decreament()" class="bg-black large" >-</button>
+        <button onclick="reset()" class="bg-black large">Reset</button>
+        </div>
+    </div>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
